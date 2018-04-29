@@ -16,11 +16,13 @@ body{
 h1{
 	font-size:0.65em;
 	margin:0;
+	color:white;
 }
 .bar{
+	padding:2px;
 	display:flex;
-	align-item:center;
+	align-items:center;
 	height:20px;
-	border-radius:10px;
+	border-radius:9px;
 	background-color:#00a0e9;
 }
