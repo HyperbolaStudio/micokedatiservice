@@ -14,7 +14,7 @@ body{
 	border-color:#00a0e9;
 }
 h1{
-	font-size:0.65em;
+	font-size:16px;
 	margin:0;
 	color:white;
 }
@@ -22,10 +22,13 @@ h1{
 	padding:2px;
 	display:flex;
 	align-items:center;
-	height:20px;
-	border-radius:9px;
+	height:36px;
+	border-radius:9px 9px 0 0;
 	background-color:#00a0e9;
 }
 #timu{
 	padding:5px;
+}
+#subject{
+	margin-left:2px;
 }
