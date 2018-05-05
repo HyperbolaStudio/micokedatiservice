@@ -27,9 +27,20 @@ h1{
 	border-radius:9px 9px 0 0;
 	background-color:#00a0e9;
 }
-#timu{
+.timu{
 	padding:5px;
 }
 #subject{
 	margin-left:2px;
+}
+#avatar{
+	width:28px;
+	height:28px;
+	border-radius:14px;
+	background-color:#ffffff;
+	float:left;
+}
+#username{
+	padding:2px;
+	float:right;
 }
