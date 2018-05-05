@@ -44,3 +44,9 @@ h1{
 	padding:2px;
 	float:right;
 }
+#daka{
+	width:72px;
+	height:72px;
+	border-radius:36px;
+	box-shadow:0 0 5px;
+}
