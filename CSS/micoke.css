@@ -53,6 +53,11 @@ h1{
 	border-radius:36px;
 	box-shadow:0 0 5px;
 }
+#dakacap{
+	text-align:center
+}
+#dakalabel{
+}
 #articlelist{
 	mar-gin:0;
 	width:inherit;
