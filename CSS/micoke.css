@@ -22,6 +22,8 @@ h1{
 	margin:0;
 	color:white;
 }
+.title{
+}
 .bar{
 	padding:2px;
 	display:flex;
@@ -47,19 +49,23 @@ h1{
 	padding:2px;
 	float:right;
 }
-#daka{
+#userbox{
+	display:flex;
+	justify-content:space-around;
+}
+.daka{
 	width:72px;
 	height:72px;
 	border-radius:36px;
 	box-shadow:0 0 5px;
 }
-#dakacap{
-	text-align:center
+.dakacap{
+	text-align:center;
+	width:80px;
 }
-#dakalabel{
+.dakalabel{
 }
 #articlelist{
-	mar-gin:0;
 	width:inherit;
 }
 .list{
@@ -80,4 +86,23 @@ h1{
 }
 .detail{
 	color:#666;
+}
+.navigator{
+	position:absolute;
+	right:5px;
+	color:white;
+}
+#answer{
+	height:64px;
+}
+#commit{
+	background: #00c853;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	height: 32px;
+	letter-spacing: .5px;
+	line-height: 32px;
+	padding: 0 12px;
+}
 }
