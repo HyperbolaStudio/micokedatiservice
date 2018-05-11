@@ -106,4 +106,7 @@ h1{
 	line-height: 32px;
 	padding: 0 12px;
 }
+#exam-container{
+	border:none;
+	width:100%
 }
