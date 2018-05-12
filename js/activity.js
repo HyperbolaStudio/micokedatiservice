@@ -1,4 +1,6 @@
-var serverUrl="micokedashboard.hyperbola.studio"
+
 $(document).ready(function(){
-	
+	$("#extendtoday").click(function(){
+		$("#exam").toggle(100);
+	});
 });
