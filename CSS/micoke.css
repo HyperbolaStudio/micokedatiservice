@@ -93,6 +93,9 @@ h1{
 	right:5px;
 	color:white;
 }
+/*.navigator :hover{
+	box-shadow:0 0 5px;
+}*/
 #answer{
 	height:64px;
 }
