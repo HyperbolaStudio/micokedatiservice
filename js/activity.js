@@ -1,4 +1,5 @@
 /*notebook
+*判断用户是否登陆里没登陆的部分还没写
 *判断登陆状态switch里有2个alert加注释发布版删掉
 */
 var login;//用户是否登陆
@@ -28,23 +29,23 @@ if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//�
 	ajax.send(JSON.stringify(postready));//将对象转换为json并发送
 	var receive=JSON.parse(ajax.responseText);//接收到的数据object
 	switch(receive.status){//判断登陆状态
-		case "login_ok":
+		case "login_ok"://登陆成功
 			login=true;
 			user.username=c_obj.username;
 			user.nickname=receive.nickname;
 			break;
-		case "login_not_exist":
+		case "login_not_exist"://用户不存在
 			login="false";
 			break;
-		case "login_passed_err":
+		case "login_passed_err"://密码错误
 			login="false";
 			break;
-		case "login_server_err":
+		case "login_server_err"://服务器错误
 			login="false";
 			//alert("服务器异常");
 			break;
-		default:
-			//alert("server_no_ack：在登录时服务器没有响应")
+		default://服务器坏了
+			//alert("server_no_ack：在登录时服务器没有响应");
 	}
 }
 
