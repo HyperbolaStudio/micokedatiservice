@@ -9,7 +9,7 @@ var newest=new Array();//3篇最新文章的路径
 var user={
 	username:"",
 	nickname:""
-}
+};
 var remote={//远程url
 	protocol:"http://",
 	host:"micoke.dashboard.hyperbola.studio",
