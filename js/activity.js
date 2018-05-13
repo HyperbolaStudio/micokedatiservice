@@ -1,5 +1,6 @@
 /*notebook
 *判断登陆状态switch里有2个alert加注释发布版删掉
+*判断用户最终是否登陆switch还没写完(要结合dom加元素了)
 */
 var login;//用户是否登陆
 var todaydate;//远程更新的最新日期（不是本地现在日期）
@@ -34,17 +35,24 @@ if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//�
 			user.nickname=receive.nickname;
 			break;
 		case "login_not_exist"://用户不存在
-			login="false";
+			login=false;
 			break;
 		case "login_passed_err"://密码错误
-			login="false";
+			login=false;
 			break;
 		case "login_server_err"://服务器错误
-			login="false";
+			login=false;
 			//alert("服务器异常");
 			break;
 		default://服务器坏了
 			//alert("server_no_ack：在登录时服务器没有响应");
 	}
-}
-
+};
+switch(login){//判断用户最终是否登陆
+	case true:
+		
+		break;
+	case false:
+		
+		break;
+};
