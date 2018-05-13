@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /> 
-    <meta content="教育,学习,原创,试卷,阅读" name=description>
-<META content="教育,学习,原创,试卷,阅读" name=keywords>
+    <meta content="教育,学习,原创,试卷,阅读" name="Description">
+	<meta content="教育,学习,原创,试卷,阅读" name="Keywords">
     <title>MICOKE</title>
     <link rel="stylesheet" href="CSS/micoke.css">
     <script src="js/activity.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/marked.js"></script>
+	<script>
+	</script>
    </head>
    <body style="max-width:100%">
     <div class="card" id="user">
@@ -20,7 +22,7 @@
 					</div>
 					<div id="username">未登录</div>
 				</h1>
-				<span class="navigator" id="usermore">更多<img src="image/chevron-right.svg" alt="more" align="center"/></span>
+				<a href="" class="navigator" id="usermore">更多<img src="image/chevron-right.svg" alt="more" align="center" width="36px"/></a>
 			</div>
 			<div class="timu" id="userbox">
 				<div class="dakacap">
@@ -30,7 +32,7 @@
 					</div>
 				</div>
 				<div class="dakacap">
-					<img class="daka" src="" alt="wall">
+					<img class="daka" src="image/wall.svg" alt="wall">
 					<div class="dakalabel">
 						表白墙
 					</div>
@@ -44,10 +46,10 @@
 				<option name="chinese" selected>语文</option>
 				<option name="maths">数学</option>
 			</select>
-			<span class="navigator" id="extendtoday">收起<img src="image/chevron-right.svg" alt="more" align="center" style="transform:rotate(-90deg)"/></span>
+			<a href="" class="navigator" id="extendtoday">更多<img src="image/chevron-right.svg" alt="more" align="center" width="36px"/></a>
 			</div>
 			<div class="timu" id="exam">
-				<span id="examdate">testtest</span>
+				<span id="examdate"></span>
 				<div id="exam-container"></div>
 				<textarea id="answer" placeholder="请输入答案"></textarea><br/>
 				<input id="commit" type="button" value="提交"/>
@@ -56,9 +58,9 @@
 		<div class="card" id="article">
 			<div class="bar">
 				<h1 class="title">文章</h1>
-				<span class="navigator" id="articlemore">更多<img src="image/chevron-right.svg" alt="more" align="center"/></span>
+				<a href="" class="navigator" id="articlemore">更多<img src="image/chevron-right.svg" alt="more" align="center" width="36px"/></a>
 			</div>
-			<div class="timu" id=articlelist">
+			<div class="timu" id="articlelist">
 				<div class="list" id="list1">
 					<img  class="listimg" src="image/daka.svg" alt="list1"/>
 					<h2 class="articletitle">This is a test</h2>
