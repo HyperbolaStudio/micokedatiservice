@@ -3,9 +3,6 @@
 *判断登陆状态switch里有2个alert加注释发布版删掉
 *判断用户最终是否登陆switch还没写完(要结合dom加元素了)
 */
-function byID(a){
-	return document.getElementById(a)
-};
 var login=false;//用户是否登陆
 var todaydate;//远程更新的最新日期（不是本地现在日期）
 var lastdate;//昨日答案解析的日期
@@ -56,14 +53,13 @@ if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//�
 			//alert("server_no_ack：在登录时服务器没有响应");
 	}
 };
-login=true;
 switch(login){//判断用户最终是否登陆
 	case true:
-		document.getElementById("login").style="display:none";
-		document.getElementbyID("userbox").style="display:block";
+		document.getElementById("login").style.display="none";
+		document.getElementbyID("userbox").style.display="block";
 		break;
 	case false:
-		document.getElementbyID("login").style="display:block";
-		document.getElementById("userbox").style="display:false";
+		document.getElementbyID("login").style.display="block";
+		document.getElementById("userbox").style.display="false";
 		break;
 };
