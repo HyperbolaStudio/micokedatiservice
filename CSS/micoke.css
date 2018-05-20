@@ -8,10 +8,10 @@ ul{
 }
 .card{
 	border-radius:10px;
-	margin-left:10px;
-	margin-right:10px;
-	margin-top:10px;
-	margin-bottom:10px;
+	margin-left:12px;
+	margin-right:12px;
+	margin-top:12px;
+	margin-bottom:12px;
 	border-style:solid;
 	border-width:1px;
 	border-color:#00a0e9;
@@ -33,7 +33,7 @@ h1.title{
 	background-color:#00a0e9;
 }
 .timu{
-	margin:5px;
+	margin:6px;
 	font-size:16px;
 }
 #subject{
@@ -105,7 +105,7 @@ h1.title{
 	height:96px;
 	margin:0px;
 	width:100%;
-	transform:translateX(-2.5px);
+	transform:translateX(-3px);
 }
 #commit{
 	background: #00c853;
@@ -126,16 +126,19 @@ h1.title{
 	letter-spacing: .5px;
 	line-height: 36px;
 	padding: 0 24px;
-	box-shadow:0 0 5px;
-}
-.usrnav :active{
-	box-shadow:none;
 }
 #loginbutton{
 	background: #00a0e9;
+	transition:background 0.25s;
+}
+#loginbutton :active{
+	background:;
 }
 #signup{
 	background: #00c853;
+	transition:background 0.25s;
+}
+#signup :active{
 }
 #exam-container{
 	border:none;
