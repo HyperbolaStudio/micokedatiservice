@@ -1,4 +1,5 @@
 /*notebook
+*c_obj的内容没写
 *判断登陆状态switch里有2个alert加注释发布版删掉
 *判断用户最终是否登陆switch还没写完(要结合dom加元素了)
 */
@@ -15,7 +16,8 @@ var remote={//远程url
 	host:"micoke.dashboard.hyperbola.studio",
 };
 var ajax=new XMLHttpRequest();//Ajax object
-var c_obj=JSON.parse(document.cookie);//cookie object
+var c_obj;//cookie object
+//c_obj codes
 if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//判断用户是否登陆
    //没有登陆
 	login=false;
