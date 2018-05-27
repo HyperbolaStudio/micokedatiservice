@@ -6,7 +6,7 @@
 var login=false;//用户是否登陆
 var todaydate;//远程更新的最新日期（不是本地现在日期）
 var lastdate;//昨日答案解析的日期
-var newest[]=new Array(3);//3篇最新文章的路径
+var newest=new Array(3);//3篇最新文章的路径
 var user={
 	username:"",
 	nickname:""
@@ -21,7 +21,7 @@ var c_obj={
 	password:""
 };//cookie object
 //c_obj codes
-if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//判断用户是否登陆
+/*if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//判断用户是否登陆
    //没有登陆
 	login=false;
 }else{
@@ -52,14 +52,15 @@ if(c_obj.username=="" || c_obj.username==null || c_obj.username==undefined){//�
 		default://服务器坏了
 			//alert("server_no_ack：在登录时服务器没有响应");
 	}
-};
+};*/
+login=true;
 switch(login){//判断用户最终是否登陆
 	case true:
 		document.getElementById("login").style.display="none";
-		document.getElementbyID("userbox").style.display="block";
+		document.getElementById("userbox").style.display="block";
 		break;
 	case false:
-		document.getElementbyID("login").style.display="block";
-		document.getElementById("userbox").style.display="false";
+		document.getElementById("login").style.display="block";
+		document.getElementById("userbox").style.display="none";
 		break;
 };
