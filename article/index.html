@@ -7,26 +7,29 @@
 	<meta content="教育,学习,原创,试卷,阅读" name="Keywords">
     <title>MICOKE</title>
     <link rel="stylesheet" href="../CSS/micoke.css">
-    <script src="../js/activity.js"></script>
+    <script>
+    	var def={
+    		title:"111",
+    		detail="www
+    	};
+    	document.write("<div class=\"list\"><img  class=\"listimg\" src=\""+def.imgpath+"\" alt=\"list\"/><h2 class=\"articletitle\">"+def.title+"</h2><span class=\"detail\">"+def.detail+"</span></div>");
+    	var ajax=new XMLHttpRequest();
+    	ajax.open("GET","http://mds.hyperbola.studio/article/check.php",true);
+    	ajax.send();
+    	var list=ajax.responseText.split("\n");
+    	for(var i=0;i<list.length;i++){
+    		var x=list[i];
+    		ajax.open("GET","http://mds.hyperbola.studio/article/"+x+"def.json",true);
+    		ajax.send();
+    		var def=JSON.parse(ajax.responseText);
+    		document.write("<div class=\"list\"><img  class=\"listimg\" src=\""+def.imgpath+"\" alt=\"list\"/><h2 class=\"articletitle\">"+def.title+"</h2><span class=\"detail\">"+def.detail+"</span></div>")
+    	}
+	</script>
     <script src="../js/marked.js"></script>
 	<script>
 	</script>
    </head>
    <body style="max-width:100%">
-   	<div class="list" id="list1">
-					<img  class="listimg" src="../image/daka.svg" alt="list1"/>
-					<h2 class="articletitle">This is a test</h2>
-					<span class="detail">测试测试测试测试测试测试测试测试测试测试测试</span>
-				</div>
-				<div class="list" id="list2">
-					<img  class="listimg" src="../image/daka.svg" alt="list2"/>
-					<h2 class="articletitle">This is another test</h2>
-					<span class="detail">测试测试测试测试测试测试测试测试测试测试测试</span>
-				</div>
-				<div class="list" id="list3">
-					<img  class="listimg" src="../image/daka.svg" alt="list3"/>
-					<h2 class="articletitle">This is also a test</h2>
-					<span class="detail">测试测试测试测试测试测试测试测试测试测试测试</span>
-				</div>
-			</div>
+   
    </body>
+  </html>
