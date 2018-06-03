@@ -29,3 +29,26 @@ h2{
 	padding-left:2px;
 	padding-right:4px;
 }
+#yesterday {
+	transition: background 0.2s;
+}
+
+#yesterday:active {
+	background: #ccc;
+}
+
+#today {
+	transition: background 0.2s;
+}
+
+#today:active {
+	background: #ccc;
+}
+
+.inner {
+	padding:2px;
+	max-height: 300px;
+	overflow-y: scroll;
+	background:#eee;
+	border-style: inset;
+}
