@@ -1,7 +1,26 @@
+body{
+	background:#f6f6f6;
+	margin:8px
+}
 .card{
 	border:solid #777777 1px;
-	min-height:120px;
 	border-radius:3px;
 	box-shadow:0 0 5px #333333;
-	background:#f6f6f6;
+	background:#fff;
+	margin:8px 0;
+	padding:2px;
+	transition:background 0.2s;
+}
+.card:active{
+	background:#ccc;
+}
+#broadcast{
+	background:#00a0e9;
+	color:#fff;
+}
+h2{
+	font-size:16px;
+	/*font-weight:normal;*/
+	margin:0;
+	border-bottom:solid #777 2px;
 }

@@ -3,14 +3,32 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 <link rel="stylesheet" href="CSS/micoke.css" type="text/css" />
 <title>MICOKE</title>
 <script src="js/jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<div class="card" id="broadcast">
-		
-	</div>
+	<section id="micoke">
+		<div class="card" id="broadcast" onclick="location.href='https://www.hyperbola.studio/zh-CN/index.html'">
+			<h2 style="border-bottom-color:#fff"><img src="image/broadcast.svg" alt="broadcast" height="28px" align="center">公告</h2>
+			<span id="guangbo">这是测试版应用<br>ver0.0.1_pre</span>
+		</div>
+		<div class="card" id="user">
+			<h2>未登录</h2>
+			<input type="text" placeholder="用户名">
+			<input type="password" placeholder="密码">
+		</div>
+		<div class="card" id="yesterday">
+			<h2>昨天每日一题答案</h2>
+		</div>
+		<div class="card" id="today">
+			<h2>每日一题</h2>
+		</div>
+	</section>
+	<section id="article">
+		<h1>文章<h1>
+	</section>
 </body>
 </html>
