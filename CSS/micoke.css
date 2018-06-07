@@ -47,8 +47,10 @@ h2{
 
 .inner {
 	padding:2px;
+	margin:4px;
 	max-height: 300px;
 	overflow-y: scroll;
 	background:#eee;
-	border-style: inset;
+	border: solid 1px #777;
+	box-shadow:0 0 2px;
 }
