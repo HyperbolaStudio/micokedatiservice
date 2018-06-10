@@ -58,3 +58,7 @@ h2{
 	text-align:center;
 	color:#888
 }
+.a-inner {
+	background: #ddd;
+	width:100%;
+}
